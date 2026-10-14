@@ -1,0 +1,483 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Íõ 776715698@qq.com, no, LIC=HN0AE-5X2AS-SBLEJ-UXH91-CBLK3-E8EM9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  D:\AAAAA -----keil 5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+D:\stm32_sum\flight\MDK-ARM\flight.uvprojx
+Project File Date:  09/10/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\AAAAA -----keil 5\ARM\ARMCC\Bin'
+Build target 'flight'
+compiling stm32f1xx_hal_rcc.c...
+compiling main.c...
+../commet/comment.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 1 warning, 0 errors
+compiling usart.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_it.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+../Core/Src/stm32f1xx_it.c: 1 warning, 10 errors
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling timers.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\timers.c: 1 warning, 10 errors
+compiling croutine.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\croutine.c: 1 warning, 10 errors
+compiling stm32f1xx_hal_uart.c...
+compiling list.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\list.c: 1 warning, 10 errors
+compiling queue.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\queue.c(329): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(329): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(942): error:  #18: expected a ")"
+                              
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(942): error:  #18: expected a ")"
+                              
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(955): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(955): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1024): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1024): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1425): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1425): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1485): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1485): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1588): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1588): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1668): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1668): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1785): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1785): error:  #18: expected a ")"
+                          
+ueueYIELD_IF_USING_PREEMPTION();
+..\freertos\queue.c(1846): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c(1846): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\queue.c: 1 warning, 30 errors
+compiling stream_buffer.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\stream_buffer.c: 1 warning, 10 errors
+compiling tasks.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\tasks.c(1096): error:  #18: expected a ")"
+              
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(1096): error:  #18: expected a ")"
+              
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(1200): error:  #18: expected a ")"
+                  
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1200): error:  #18: expected a ")"
+                  
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1286): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1286): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1333): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1333): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1653): error:  #18: expected a ")"
+                      
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(1653): error:  #18: expected a ")"
+                      
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(1747): error:  #18: expected a ")"
+                  
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1747): error:  #18: expected a ")"
+                  
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(1853): error:  #18: expected a ")"
+                          
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(1853): error:  #18: expected a ")"
+                          
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(2267): error:  #18: expected a ")"
+                      
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(2267): error:  #18: expected a ")"
+                      
+askYIELD_IF_USING_PREEMPTION();
+..\freertos\tasks.c(3469): error:  #18: expected a ")"
+                  
+askYIELD();
+..\freertos\tasks.c(3469): error:  #18: expected a ")"
+                  
+askYIELD();
+..\freertos\tasks.c(4716): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c(4716): error:  #18: expected a ")"
+                      
+ortYIELD_WITHIN_API
+);
+..\freertos\tasks.c: 1 warning, 30 errors
+compiling event_groups.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\event_groups.c(261): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\event_groups.c(261): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\event_groups.c(413): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\event_groups.c(413): error:  #18: expected a ")"
+              
+ortYIELD_WITHIN_API
+);
+..\freertos\event_groups.c: 1 warning, 14 errors
+compiling heap_4.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\poarable\heap_4.c: 1 warning, 10 errors
+compiling port.c...
+..\freertos\poarable\portmacro.h(122): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(128): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( ulNewBASEPRI ) : "memory" );
+..\freertos\poarable\portmacro.h(129): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(130): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(127): warning:  #177-D: variable "ulNewBASEPRI"  was declared but never referenced
+      uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+..\freertos\poarable\portmacro.h(135): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( 0 ) : "memory" );
+..\freertos\poarable\portmacro.h(141): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, basepri" : "=r" ( ulReturn ) );
+..\freertos\poarable\portmacro.h(142): error:  #18: expected a ")"
+      __asm volatile ( "msr basepri, %0" : : "r" ( configMAX_SYSCALL_INTERRUPT_PRIORITY ) : "memory" );
+..\freertos\poarable\portmacro.h(143): error:  #18: expected a ")"
+      __asm volatile ( "dsb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(144): error:  #18: expected a ")"
+      __asm volatile ( "isb 0xF" ::: "memory" );
+..\freertos\poarable\portmacro.h(153): error:  #18: expected a ")"
+      __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt ) );
+..\freertos\poarable\port.c: 1 warning, 10 errors
+compiling app_freertos_task.c...
+appliaction\app_freertos_task.c(1): warning:  #1-D: last line of file ends without a newline
+  #include "app_freertos_task.h"
+appliaction\app_freertos_task.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_exti.c...
+compiling comment.c...
+..\commet\comment.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\commet\comment.c(12): warning:  #1-D: last line of file ends without a newline
+  }
+..\commet\comment.c: 2 warnings, 0 errors
+"flight\flight.axf" - 144 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_flight
+  D:\AAAAA -----keil 5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\AAAAA -----keil 5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
